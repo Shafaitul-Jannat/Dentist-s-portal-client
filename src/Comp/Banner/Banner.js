@@ -7,10 +7,11 @@ import Button from '../Shared/Button';
 const Banner = () => {
     return (
         <div className="hero min-h-screen px-12">
-            <div>
-                <img src={bg} className='h-full w-full bg-cover bg-center ' alt='' />
-
-            </div>
+            <div style={{
+            background: `url(${bg})`,
+            backgroundSize: 'cover'
+        }} className="hero min-h-screen">
+           
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={chair} className="max-w-sm rounded-lg shadow-2xl " alt='' />
                 <div>
@@ -19,6 +20,7 @@ const Banner = () => {
 
                     <Button>Get Started</Button>
                 </div>
+            </div>
             </div>
         </div >
     );
